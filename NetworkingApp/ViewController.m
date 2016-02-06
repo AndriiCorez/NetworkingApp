@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *signinBtn;
+@property (weak, nonatomic) IBOutlet UIButton *signoutBtn;
+@property (weak, nonatomic) IBOutlet UIButton *refreshBtn;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -22,6 +26,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Buttons Actions
+
+- (IBAction)signInTapped:(id)sender {
+}
+
+- (IBAction)signOutTapped:(id)sender {
+}
+
+- (IBAction)refreshTapped:(id)sender {
 }
 
 @end
