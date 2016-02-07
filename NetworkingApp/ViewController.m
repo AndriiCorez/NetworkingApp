@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NXOAuth2.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *signinBtn;
@@ -31,6 +32,7 @@
 #pragma mark - Buttons Actions
 
 - (IBAction)signInTapped:(id)sender {
+    [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:@"Instagram"];
 }
 
 - (IBAction)signOutTapped:(id)sender {
